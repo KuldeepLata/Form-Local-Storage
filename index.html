@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+</head>
+
+<body>
+
+
+
+
+    <script>
+
+        // localStorage.setItem("username", "kuldeep");       //Set karna
+
+        // const username = localStorage.getItem("username")        //Get karna
+        // console.log(username);
+
+
+
+
+
+        const student = [
+            {
+                name: 'kuldeep',
+                age: 20,
+                city: 'jaipur'
+            },
+            {
+                name: 'saurabh',
+                age: 20,
+                city: 'sikar'
+            },
+            {
+                name: 'amit',
+                age: 20,
+                city: 'jaipur'
+            },
+            {
+                name: 'gaurav',
+                age: 20,
+                city: 'sikar'
+            }
+        ]
+
+      localStorage.setItem("UserDetails", JSON.stringify(student));
+
+      const UseData = JSON.parse(localStorage.getItem("UserDetails"));
+      console.log(UseData);
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
